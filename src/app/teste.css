@@ -1,0 +1,234 @@
+/* 
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 0 !important;
+    margin-left: 0 !important;
+  }
+  
+  .Linhas {
+    width: 100%;
+    height: auto;
+    display: table;
+    padding: 10px;
+  }
+  
+  .Linhas_1 {
+    width: 100%;
+    height: auto;
+    display: table;
+    padding: 0;
+    margin: 10px;
+    background: #fff;
+    border: 1px solid;
+    border-color: $CardBorder;
+  }
+  
+  .Linhas_2 {
+    width: 100%;
+    height: auto;
+    display: table;
+    padding: 0;
+    margin: 10px;
+  }
+  .Linhas_3 {
+    width: 100%;
+    height: auto;
+    display: table;
+    padding: 0;
+    margin: 10px;
+  }
+  
+  .Linha_Grafico_1 {
+    // width: 100%;
+    height: auto;
+    border: 1px solid;
+    border-color: $CardBorder;
+    padding-bottom: 10px;
+    background: #fff;
+  }
+  .Tit_LinhaGraf_1 {
+    background: #d9dce0;
+    padding: 5px 10px;
+  }
+  .Tit_LinhaGraf_1 h5 {
+    color: $main-color;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .Linha_Grafico_2 {
+    width: 25%;
+    float: left;
+    background: #fff;
+    border: 1px solid $CardBorder;
+  }
+  .Tit_LinhaGraf_2 {
+    background: #d9dce0;
+    padding: 5px 10px;
+  }
+  .Tit_LinhaGraf_2 h5 {
+    color: $main-color;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .Linha_Grafico_3 {
+    width: 72%;
+    float: right;
+    background: #fff;
+  }
+  .Tit_LinhaGraf_3 {
+    background: #d9dce0;
+    padding: 5px 10px;
+  }
+  .Tit_LinhaGraf_3 h5 {
+    color: $main-color;
+    font-size: 1.2em;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    margin-top: 5px;
+  }
+  
+  .graficoUsuariosOnline {
+    padding: 10px;
+  }
+  
+  
+  
+  nav {
+    display: block;
+    float: right;
+  }
+  .hamburger a {
+    font-size: 1em;
+    display: block;
+    float: right;
+    margin-top: -25px;
+    text-decoration: none;
+    color: #fff;
+    background: #1c7cd5;
+    padding: 5px;
+    border-radius: 4px;
+  }
+  .TotalOn {
+    width: 47%;
+    display: block;
+    float: left;
+    margin: 10px 0px 10px 20px;
+  }
+  
+  .tit_Total_On {
+    background: $verde-agua;
+    color: #fff;
+    padding: 3px 10px 0px;
+  }
+  
+  .tit_Total_On p {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  .TotalOff {
+    width: 47%;
+    display: block;
+    float: left;
+    margin: 10px 5px 10px 15px;
+  }
+  
+  .tit_Total_Off {
+    background: $red;
+    color: #fff;
+    padding: 3px 10px 0px;
+  }
+  
+  .tit_Total_Off p {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+  }
+  
+  .fa,
+  .fas {
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    float: right;
+    margin-top: 5px;
+  }
+  .dados {
+    width: 50%;
+    display: block;
+    float: left;
+    border: 1px solid;
+    border-color: $CardBorder;
+    height: 115px;
+    
+  }
+  
+  .dados h3 {
+    color: $main-color;
+    font-size: $h3;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .funcao {
+    color: $textoSubTit;
+    margin: 10px;
+    font-size: 13px;
+  }
+  
+  .icone,
+  fas fa-user {
+    float: right;
+  }
+  
+  .TotalDeMaquinas {
+    width: 80%;
+    display: block;
+    float: left;
+    margin: 20px 0px;
+  }
+  
+  .tit_TotalDeMaquinas {
+    background: $textoSubTit;
+    color: #fff;
+    padding: 3px 10px 0px;
+  }
+  
+  .TotalDeMaquinas p {
+    margin: 0;
+    padding-bottom: 5px;
+    font-size: 1.2em;
+    text-align: center;
+  }
+  
+  .dados_TotalDeMaquinas {
+    width: 100%;
+    display: block;
+    float: left;
+    border: 1px solid;
+    border-color: $CardBorder;
+  }
+  
+  .dados_TotalDeMaquinas h3 {
+    color: $main-color;
+    font-size: $h3;
+    text-align: center;
+    font-weight: 600;
+  }
+  
+  .graficoDeCirculos {
+    width: 100%;
+    display: block;
+    padding: 20px;
+  }
+   */

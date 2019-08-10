@@ -1,0 +1,26 @@
+header {
+  background-color:#001d46;
+  padding: 11px;
+  
+ 
+  p:first-child {
+    font-size:22px;
+  }
+
+  p {
+    display: inline-block;
+    color: aliceblue;
+    margin: 0px;
+    margin-left: 70px;
+  }
+
+  p:last-child {
+    font-weight: bold;
+    float: right;
+    margin-right: 100px;
+  }
+
+  span {
+    font-size:17px;
+  }
+}

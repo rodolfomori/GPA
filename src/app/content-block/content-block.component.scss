@@ -1,0 +1,102 @@
+.container-fluid{
+  background-color: #F4F4F4;
+}
+
+.card {
+    background-color: #f4f4f4;
+    margin: 20px;
+
+    &--desl-equips{
+      width: 25%;
+      float: left;
+      background: #fff;
+      border: 1px solid #D9DCE1;
+      margin: 20px;
+    }
+
+    &--sem-user{
+      width: 55%;
+      float: left;
+      background: #fff;
+      border: 1px solid #D9DCE1;
+      margin: 20px;
+    }
+
+    &--linha-2{
+      background-color: #D9DCE1;
+    }
+}
+
+.card first-child{
+    border: solid gray;
+}
+
+.card-header{
+    padding: 4px;
+    background-color: #D9DCE0;// #d9dce0;
+    color:#001d46;
+    border-radius: 0px;
+    border: none;
+
+    &--red{
+        background-color:#BA0450;
+        padding: 5px;
+        color:white;
+        border-radius: 0px;
+        border: none;
+    }
+    &--blue{
+        background-color:#15A9AF;
+        padding: 5px;
+        color:white;
+        border-radius: 0px;
+        border: none;
+    }
+
+}
+
+.card-title{
+    background-color: white;
+}
+
+.cardH{
+    background-color: white;
+
+}
+
+.col {
+    background-color: aquamarine;
+    height: 100px;
+}
+
+.card-body {
+    background-color: white;
+    padding: 0;
+
+}
+
+.func-Terc{
+    width: 50%;
+    display: inline-block;
+    text-align: center;
+    font-size: 60px;
+    border: 1px solid #e7e9eb;
+    padding: 0;
+    margin: 0;
+}
+
+.sub-title{
+    font-size: 15px;
+    text-align: left;
+    margin-left: 20px;
+    margin-top: 10px;
+
+}
+
+.linha-2 {
+  width: 100%;
+  height: auto;
+  display: table;
+  padding: 0;
+  margin: 10px;
+}
