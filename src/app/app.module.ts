@@ -9,6 +9,8 @@ import { FooterComponent } from './footer/footer.component';
 import { ContentBlockComponent } from './content-block/content-block.component';
 import { DetailsComponent } from './details/details.component';
 import { DetailsService } from './details/details.service';
+import { BsDropdownModule } from 'ngx-bootstrap/dropdown';
+import { PaginationModule } from 'ngx-bootstrap/pagination';
 
 @NgModule({
   declarations: [
@@ -21,7 +23,9 @@ import { DetailsService } from './details/details.service';
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    BsDropdownModule.forRoot(),
+    PaginationModule.forRoot()
   ],
   providers: [DetailsService],
   bootstrap: [AppComponent]

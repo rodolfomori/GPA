@@ -1,22 +1,49 @@
 <div class="container-fluid">
   <div class="row">
 
+
     <div class=" input-group col-6 mt-3">
-      <input class="form-control form-control-sm w-50" type="text"
+      <input class="form-control form-control-sm w-50 principal-input" type="text"
         placeholder="Busque por patrimônio, nome de usuário ou matrícula " />
       <div class="input-group-append">
-        <i class="fas fa-search"></i>
+        <i class="fas fa-search fas-principal"></i>
       </div>
     </div>
-
 
 
     <div class="col-6 mt-3">
       <div class="bundles-buttons">
         <button type="button" class="btn btn-primary btn-sm format-buttons">
           Exportar CSV </button>
-        <button type="button" class="btn btn-primary btn-sm format-buttons">
-          Gerenciar Colunas </button>
+
+
+        <div class="btn-group" dropdown #dropdown="bs-dropdown" [autoClose]="false">
+          <button type="button" class="btn btn-primary btn-sm format-buttons mr-0"
+            (click)="dropdown.toggle(true)">Gerenciar Colunas</button>
+
+          <ul id="dropdown-triggers-manual" *dropdownMenu class="dropdown-menu" role="menu"
+            aria-labelledby="button-triggers-manual">
+
+            <li> <input type="checkbox" value="" class="input-menu">Status</li>
+            <li> <input type="checkbox" value="" class="input-menu">Patrimonio</li>
+            <li> <input type="checkbox" value="" class="input-menu">Superintendencia</li>
+            <li> <input type="checkbox" value="" class="input-menu">Consultoria</li>
+            <li> <input type="checkbox" value="" class="input-menu">Dept. ID</li>
+            <li> <input type="checkbox" value="" class="input-menu">Site</li>
+            <li> <input type="checkbox" value="" class="input-menu">Último Acesso</li>
+            <li> <input type="checkbox" value="" class="input-menu">Responsável</li>
+            <li> <input type="checkbox" value="" class="input-menu">Usuário</li>
+            <li> <input type="checkbox" value="" class="input-menu">HostName</li>
+
+
+            <li class="divider dropdown-divider"></li>
+            <li> <input type="checkbox" value="" class="input-menu">Selecionar Todos</li>
+
+          </ul>
+        </div>
+
+        <!-- <button type="button" class="btn btn-primary btn-sm format-buttons">
+          Gerenciar Colunas </button> -->
       </div>
     </div>
 
@@ -35,11 +62,23 @@
             <thead>
               <tr>
                 <th>
-                  <select class="custom-select status">
-                    <option selected="" value="">Status</option>
-                    <option value="{{nome.status}}" *ngFor="let nome of status">
-                      {{nome.status}}</option>
-                  </select>
+                  <div class="btn-group" dropdown>
+                    <button id="button-basic" dropdownToggle type="button" class="btn dropdown-toggle"
+                      aria-controls="dropdown-basic">
+                      Status <span class="caret"></span>
+                    </button>
+                    <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu mt-0 pt-0" role="menu"
+                      aria-labelledby="button-basic">
+
+                      <div class="small-search">
+                        <input class="form-control form-control-sm small-input m-0 p-0" type="text"
+                          placeholder="Digite Aqui" />
+                      </div>
+                      <li class="divider dropdown-divider mt-0 pt-0"></li>
+                      <li role="menuitem"><a class="dropdown-item" href="#" *ngFor="let nome of status">
+                          {{nome.status}}</a></li>
+                    </ul>
+                  </div>
                 </th>
                 <th><select class="custom-select">
                     <option selected="">N de Patrimônio</option>
@@ -64,7 +103,8 @@
                 </th>
                 <th><select class="custom-select">
                     <option selected="">Consultoria</option>
-                    <option value="{{consultoria.nome}}"*ngFor="let consultoria of consultorias">{{consultoria.nome}}</option>
+                    <option value="{{consultoria.nome}}" *ngFor="let consultoria of consultorias">{{consultoria.nome}}
+                    </option>
                   </select>
                 </th>
                 <th><select class="custom-select">
@@ -94,6 +134,10 @@
                 <td>{{user.consultoria}}</td>
                 <td>{{user.site}}</td>
                 <td>{{user.ultimoAcesso}}</td>
+                <td><i class="fas fa-pen-square pen"></i>
+                  <i class="fas fa-plus-square plus"></i>
+                </td>
+                <!-- <td>></td> -->
 
 
 
@@ -114,14 +158,58 @@
 
 </div>
 
+<div class="container-fluid">
+
+  <div class="row">
 
 
-<!-- <div class=" input-group col-6 mt-3">
-      <input class="form-control form-control-sm w-50 border-right-0 " type="text"
-        placeholder="Busque por patrimônio, nome de usuário ou matrícula " />
-      <div class="input-group-append">
-        <span class="input-group-text border-left-0">
-          <i class="fas fa-search"></i>
-        </span>
+
+    <div class="col-6 pt-10">
+      <div class="btn-group float-left" dropdown>
+        <button id="button-basic" dropdownToggle type="button"
+          class="btn dropdown-toggle dropdown-toggle-sm button-page" aria-controls="dropdown-basic">15</button>
+        <p class="p-page"> Mostrando 1 - 15 de {{users.length}} resultados</p>
+
+        <ul id="dropdown-basic" *dropdownMenu class="dropdown-menu drop-page" role="menu"
+          aria-labelledby="button-basic">
+
+          <li role="menuitem"><a class="dropdown-item" href="#">
+              5</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#">
+              15</a></li>
+          <li role="menuitem"><a class="dropdown-item" href="#">
+              30</a></li>
+        </ul>
       </div>
-    </div> -->
+    </div>
+
+    <div class="col-6">
+
+      <div class="float-right">
+        <pagination [boundaryLinks]="true" [totalItems]="55" previousText="&lsaquo;" nextText="&rsaquo;"
+          firstText="&laquo;" lastText="&raquo;">
+        </pagination>
+      </div>
+    </div>
+
+  </div>
+
+</div>
+
+
+
+
+<!-- <div class="btn-group" dropdown #dropdown="bs-dropdown" [autoClose]="false">
+    <button type="button" class="btn btn-primary" (click)="dropdown.toggle(true)">Toggle</button>
+
+    <ul id="dropdown-triggers-manual" *dropdownMenu class="dropdown-menu"
+        role="menu" aria-labelledby="button-triggers-manual">
+      <li role="menuitem"><a class="dropdown-item" href="#">Action</a></li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Another action</a>
+      </li>
+      <li role="menuitem"><a class="dropdown-item" href="#">Something else
+        here</a></li>
+      <li class="divider dropdown-divider"></li>
+    </ul>
+  </div>
+ -->

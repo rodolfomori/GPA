@@ -2,6 +2,7 @@ import { DetailsService } from './details.service';
 import { Component, OnInit } from '@angular/core';
 import { Users } from './details';
 
+
 @Component({
   selector: 'app-details',
   templateUrl: './details.component.html',

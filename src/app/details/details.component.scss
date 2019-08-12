@@ -1,5 +1,5 @@
 .format-buttons {
-  border-radius: 15px;
+  border-radius: 15px!important;
   background-color: #28a9af;
   border: none;
   margin: 0 15px;
@@ -18,7 +18,8 @@ float: right;
   width: 100%;
 }
 
-.fa-search {
+// Input superior
+.fas-principal {
   color:#001e45;
   position: relative;
   right:22px;
@@ -26,7 +27,58 @@ float: right;
   z-index: 9999;
 }
 
-.input-group-text {
-  background-color: white;
+.principal-input{
+border-radius: 5px!important;
+}
 
+.button-search{
+  background-color: white;
+  border: 1px solid #ced4da;
+  border-left:0 solid white;
+
+}
+
+
+// Botoes superiores ( Status,patrimomio...)
+
+.btn{
+  border: 1px solid #ced4da;
+}
+
+//input menu Gerenciar Colunas
+
+.input-menu{
+  border-radius: 0;
+  margin: 0 5px;
+  font-size: 20px;
+}
+
+//botão paginas
+
+.button-page{
+  padding: 2px;
+  background-color: #d9dce0;
+  font-size: 14px;
+  margin-top: 20px;
+}
+
+.p-page{
+  margin: 20px 0 0 8px;
+}
+
+.drop-page{
+  width:10px;
+}
+
+//Ver Mais
+
+.pen{
+  color: #fcaf17;
+  font-size: 27px;
+  margin: 0 8px 0 3px;
+}
+
+.plus{
+  color:#1C7CD5;
+  font-size: 27px;
 }
